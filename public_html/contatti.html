@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contatti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto|Trirong">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/menu.css" /> 
+        <script src="js/script.js"></script>
+        <script src="js/jwt-decode.js"></script> 
+
+    </head>
+    <body>
+
+        <header>
+            <input type="checkbox" id="hamburger"/>
+            <label class="menuicon" for="hamburger"><span></span></label>
+
+            <div id="bar">
+          
+            </div>
+
+            <nav class="menu-visibility">
+                <ul>
+                    <li><a href="homeCV.html" > HOME CV</a></li>
+                    <li><a href="contatti.html" class="active" > CONTATTI</a></li>
+                    <li><a href="portfolioGrafico.html"> PORTFOLIO GRAFICO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page"> 
+
+            <div class="grigio">
+                <h1 class="titolo">CONTATTI</h1>
+            </div>
+
+            <div class="tabella">
+                <table class="a">
+                    <thead>
+                    <tr>
+                        <th scope="col"><h3> EMAIL </h3>
+                        <th scope="col"><h3> TELEFONO </h3>
+                        <th scope="col"><h3> INDIRIZZO </h3>
+                        <th scope="col"><h3> CANALI SOCIAL </h3>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td data-label="EMAIL"><p>mario.rossi@gmail.com </p>
+                        <td data-label="TELEFONO"><p>3471855442 </p>
+                        <td data-label="INDIRIZZO"><p>Via Parma 6 </p>
+                        <td data-label="CANALI SOCIAL"><p><a href="https://www.facebook.it" > FACEBOOK</a> - <a href="https://www.linkedin.it" > LINKEDIN</a></p>
+                    </tr>
+                    <tr>
+                        <td data-label="EMAIL"><p>jeff.bezos@gmail.com </p>
+                        <td data-label="TELEFONO"><p>3497785200 </p>
+                        <td data-label="INDIRIZZO"><p> Via Modena 1 </p>
+                        <td data-label="CANALI SOCIAL"><p><a href="https://www.youtube.it" > YOUTUBE</a> - <a href="https://www.amazon.it" > SITO PERSONALE</a></p>
+                    </tr>
+                    <tr>
+                        <td data-label="EMAIL"><p>dante.bassi@gmail.com </p>
+                        <td data-label="TELEFONO"><p>3408563214 </p>
+                        <td data-label="INDIRIZZO"><p>Via Augusto Daolio 5 </p>
+                        <td data-label="CANALI SOCIAL"><p><a href="https://www.instagram.it" > INSTAGRAM</a> - <a href="https://www.linkedin.it" > LINKEDIN</a></p>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="titolo">Richiedi consulenza</h2>
+
+            <div class="divForm">
+                <form id="freg">
+                    <h3>Inserisci i tuoi dati</h3>
+                    <input type="text" name="nome" id="nome" required placeholder="Inserisci nome">
+                    <input type="text" name="cognome" id="cognome" required placeholder="Inserisci cognome">
+                    <input type="email" name="mail" id="mail" required placeholder="Inserisci email">
+                    <textarea class="commento"  name="commento" id="commento"  placeholder="Inserisci commento"></textarea>
+
+                    <label for="cars">Tipo di consulenza:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Sviluppatore software</option>
+                        <option value="saab">Chitarrista</option>
+                        <option value="fiat">Fonico</option>
+                    </select>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>      
+
+
+        <footer class="flex">
+            <div class="flex-item">
+                <a href="homeCV.html"> HOME CV</a>
+                <hr>
+            </div>
+            <div class="flex-item">
+                <a href="contatti.html" > CONTATTI</a>
+                <hr>
+            </div>
+            <div class="flex-item">
+                <a href="portfolioGrafico.html"> PORTFOLIO GRAFICO</a>
+                <hr>
+            </div>
+        </footer>
+    </body>
+</html>

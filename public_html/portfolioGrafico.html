@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Portfolio Grafico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto|Trirong">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/menu.css" /> 
+        <script src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <input type="checkbox" id="hamburger"/>
+            <label class="menuicon" for="hamburger"><span></span></label>
+
+            <div id="bar">
+              
+            </div>
+
+            <nav class="menu-visibility">
+                <ul>
+                    <li><a href="homeCV.html" > HOME CV</a></li>
+                    <li><a href="contatti.html" > CONTATTI</a></li>
+                    <li><a href="portfolioGrafico.html" class="active" > PORTFOLIO GRAFICO</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page"> 
+
+            <div class="grigio">
+                <h1 class="titolo">PORTFOLIO GRAFICO</h1>
+                <h2 class="sottotitolo">Formazione svolta</h2>
+            </div>
+
+            <div class="grid" id="sezione" onload="immagine()">
+                <h2 class="titolo">C.IA.C. FORMAZIONE</h2>
+                <img src="img/java.jpg" alt="corso java" title="corso java" >
+            </div>
+
+            <div class="grid" id="sezione" onload="immagine()">
+                <h2 class="titolo">MUSICLAB</h2>
+                <img src="img/ingsuono.jpg" alt="corso java" title="corso java" >
+            </div>
+
+            <div class="grigio">
+                <h2 class="sottotitolo">Esperienze lavorative</h2>
+            </div>
+
+            <div class="grid" id="sezione" onload="immagine()">
+                <h2 class="titolo">WIND SPA</h2>
+                <img src="img/wind.jpg" alt="corso java" title="corso java" >
+            </div>
+
+            <div class="grid" id="sezione" onload="immagine()">
+                <h2 class="titolo">ORCHESTRA MATTEO BENSI</h2>
+                <img src="img/bensi.jpg" alt="corso java" title="corso java" >
+            </div>
+
+        </div>
+        <footer class="flex">
+            <div class="flex-item">
+                <a href="homeCV.html"> HOME CV</a>
+                <hr>
+            </div>
+            <div class="flex-item">
+                <a href="contatti.html" > CONTATTI</a>
+                <hr>
+            </div>
+            <div class="flex-item">
+                <a href="portfolioGrafico.html"> PORTFOLIO GRAFICO</a>
+                <hr>
+            </div>
+        </footer>
+    </body>
+</html>

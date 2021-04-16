@@ -1,0 +1,236 @@
+/* -----------------Menu nella versione mobile-----------------*/
+
+ul > li {
+    list-style: none;
+
+}
+
+
+.active{
+    color:#FFFFFF/* primary super-lightcolor*/;
+    background-color: #959492/* primary lightcolor*/;
+}
+
+.active-dropdown{
+    color:#FFFFFF /* primary super-lightcolor*/;
+    background-color:#07417b/* primary lightcolor*/;
+}
+
+nav {
+    background-color: #42413d;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 54px;
+    visibility: hidden;
+    overflow: scroll;
+}
+
+nav ul{
+    padding-bottom:54px;
+}
+
+nav ul li a {
+    padding: 16px 0 16px 32px;
+    display:block;
+    color:#fbfafa;
+    font-size:16px;
+    transition: background-color 0.3s ease;
+}
+
+.submenu{
+
+
+    padding-bottom: 5px;
+}
+
+nav ul li ul {
+    padding-left:0; 
+    padding-bottom:0;
+}
+
+nav ul li ul li a {
+    font-size:16px;
+    padding:10px 0 10px 55px;
+    border:hidden; 
+}
+
+/* ----------------- Hamburger animation ------------------ */
+
+#hamburger {
+    display: none;
+}
+
+.menuicon {
+    position:fixed;
+    height:54px;
+    width:54px;
+    margin-left:5px;
+    z-index:3;
+}
+
+.menuicon  span {
+    display: block;
+    top: 25px;
+    width: 40px;
+    height:3px;
+    left:8px;
+    background-color: #fff;
+    position: relative;
+    border-radius:20px;
+    transition-duration: 0;  
+    transition-delay: .1s;
+}
+
+.menuicon  span::after, .menuicon  span::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height:3px;
+    background-color: #fff;
+    border-radius:20px;
+    transition-duration: .1s;
+    -webkit-transition-delay: .1s, 0;
+    transition-delay: .1s, 0;
+}
+.menuicon  span::before {
+    margin-top: -10px;
+}
+.menuicon  span::after {
+    margin-top: 10px;
+}
+
+#hamburger:checked ~ .menuicon span{
+    background-color: rgba(0,0,0,0);
+}
+
+#hamburger:checked ~ .menuicon span::before {
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0,.3s;
+    -o-transition-delay: 0, .3s;
+    transition-delay: 0, .3s;
+}
+
+#hamburger:checked ~ .menuicon span::after {
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0,.3s;
+    -o-transition-delay: 0, .3s;
+    transition-delay: 0, .3s;
+}
+
+#hamburger:checked ~ .menuicon span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburger:checked ~ .menuicon span::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* ----------------- div bar per l'attivazione del menu ------------------ */
+
+#bar{
+    background-color: #42413d/* primary color*/; 
+    height:60px;
+    width:100%;
+    z-index:2;
+    position:fixed;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
+}
+
+#bar #logo{
+    float:right;
+    margin-right:12px;
+}
+
+/* ----------------- menu animation faccio apparire il menu ------------------ */
+
+#hamburger:checked ~ .menu-visibility {
+    visibility:visible;
+}
+
+/* -----------------media per menu orizzontale ------------------ */
+
+@media screen and (min-width: 500px){
+
+    .menuicon{
+        display:none; /* togliere icona hambuger icon */
+    }
+
+    #bar #logo{
+        float:left;
+        margin-left:12px;
+    }
+
+    nav{
+        z-index:3;
+        margin-top:19px;
+        height:auto;
+        background-color:transparent;
+        transition:none;
+        width:auto;
+        max-width: none;
+        float:right;
+        right:12px;
+        visibility:visible;
+        overflow:inherit;
+    }
+
+    .active{
+        background-color:transparent;
+        border-bottom: 2px solid /* primary super-lightcolor*/;
+    }
+
+    .active-dropdown{
+        color:#fff;
+        background-color:#07417b/* primary lightcolor*/;
+    }
+
+    nav ul{
+        padding:0;
+    }
+
+    nav ul li a {
+        padding:0;
+        display:inline;
+        font-size:16px;
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        background-color:transparent;
+        border-bottom: 2px solid /* primary super-lightcolor*/;
+    }
+
+    .submenu{
+        padding-left: 0;
+        color:#FFFFFF;
+    }
+
+    nav ul li {	
+        margin:0;
+        float:left;
+        position:relative;
+        padding:0 16px;
+    }
+
+    .submenu::after{
+        content: url(https://chefstudio.it/img/blog/arrow-down.svg);
+        float: right;
+        padding-left: 6px;
+    }
+
+}
+

@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+
+.colp {
+    color: #06c;
+}
+/* -------------reset----------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+* {xborder:1px solid!important;
+   box-sizing: border-box;
+}
+
+input:focus, button:focus {outline:0;}
+
+table.a{  
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+a{
+    text-decoration:none;
+}
+
+ul li{ 
+    list-style: circle;
+}
+ul,li.lista{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+html,body{
+    font-family: Roboto, serif;
+    color:#111 /*color-text*/;
+    height:100%;
+    width:100%;
+    background-color:white;
+}
+
+
+nav h1{
+    font-size: 2em;
+    text-align:center;
+    font-weight: bold;
+    color:#A24038/* primary color*/;
+    margin:10px;
+}
+nav h2{
+    margin:10px;
+    font-size: 1.3em;
+    text-align:center;
+    font-weight: bold;
+    color:#A24038/* primary color*/;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+.titolo{padding:15px;}
+
+.sottotitolo{padding:15px;}
+
+.item{
+    max-width:350px;
+    padding:10px;
+    margin:10px auto;}
+header {height: 60px}
+
+/* page e row inner interna full tutta pagina ------------------ */
+
+.fotoP{
+    padding: 8px;
+}
+
+.page{
+    width: 100%;
+    margin-top: 0px;
+}
+.page .full-row{
+    width:90%;
+    margin: 15px auto;
+    padding: 0px;
+}
+
+.footer{
+    width:100%;
+    margin: 15px auto;
+    padding: 0px;
+}
+
+.page .tabella{
+    max-width:90%;
+    margin: 15px auto;
+    padding: 10px 10px 10px 10px  ;
+    background-color: #959492;
+    overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 500px) {
+
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+a#bio{    
+    font-size: larger;}
+
+.grigio {
+    width:90%;
+    margin: 15px auto;
+    padding: 0px;
+    color:white;
+    background-color: #e6e9ea;
+    background-image: linear-gradient(to left,#B2AFAC,#42413d,#959492);
+}
+
+.fotoAnagrafica{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    max-width:980px;
+}
+
+.bio{
+
+    font-size: larger;
+}
+
+.bklight {
+    background-color: lightskyblue;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.flex-item{
+    flex:1;
+    min-width: 300px;
+
+}
+
+#sezione
+{    width:50%;
+     margin: 15px auto;
+     padding: 0px;
+     color:white;
+     background-color: #959492;
+}
+#sezione img
+{
+    width:100%;
+}
+
+.card {
+    margin: 10px auto;
+    max-width: 350px;
+    background-color: white;
+}
+.card *{
+    margin:10px;
+}
+.card img{
+    border-radius:50%;
+    max-width: 150px;
+}
+.altcolor:nth-child(odd){
+    background-color: antiquewhite ;   
+}
+.altcolor:nth-child(even){
+    background-color: lightgoldenrodyellow;    
+
+}
+.legend {
+    display: block;
+    padding: 16px;
+    font-size: larger;
+    max-width: 500px;
+    margin: 15px;
+    text-align: center;
+}
+.callaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green; 
+
+
+    background-image: url(../img/bankcallaction.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.callaction img {
+    display: block;
+    width: 100px;
+    height: 100px;
+
+}
+.callaction .legend {
+    display: block;
+    font-size:2em;
+    color:white;
+    background-color: #aaaaffaa;
+}
+.page a{
+    color:#A24038/* primary color*/;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.page a:hover{
+    color:#B3453E/* primary lightcolor*/;
+}
+
+.none {
+    display :none;
+}
+.separator {
+    height:30px;
+}
+.grid {
+    width:100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+footer{
+    margin-top:30px;
+    background-color: #42413d;
+    color:white;
+    border-style: none!important;
+}
+footer > div {
+    text-align: center;
+    padding:20px;
+    border-style: none!important;
+}
+footer a,footer a:hover {
+    color:white;
+}
+footer *{
+    display:block;
+}
+
+form{
+    padding: 10px;
+    background-color: white;
+}
+input, button{
+    width: 100%;
+    padding: 10px;
+    margin: 9px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+textarea.commento{
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    resize: none;
+    margin: 9px 0px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: ui-sans-serif;
+}
+
+.spconsulenza{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    color:#42413d;
+    padding: 10px;
+}
+
+.divForm {
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    border: 2px solid #42413d;
+    width: 90%;
+    max-width: 350px;
+
+}
+.modal {
+    display:block;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal h3{
+    text-align: center;
+    margin:5px;
+}
+.closeX{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
